@@ -35,7 +35,7 @@ def setup():
 def sendCommand(handle):
 	#prompt user for one byte to send
 	while True:
-		msg = input("enter byte in hex (0xA4): ")
+		msg = input("Enter byte in hex (0xnn): ")
 		try:
 			num = int(msg, 16)
 			print ("Sending "+ hex(num))
