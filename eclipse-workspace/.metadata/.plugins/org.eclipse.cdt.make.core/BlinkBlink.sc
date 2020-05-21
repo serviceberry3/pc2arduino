@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-                
-    
-    
     <instance id="de.innot.avreclipse.configuration.app.release.1821688575;de.innot.avreclipse.configuration.app.release.1821688575.;de.innot.avreclipse.tool.compiler.winavr.app.release.335713713;de.innot.avreclipse.compiler.winavr.input.1196472932">
-                                
-        
-        
         <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
             <includePath path="/usr/lib/gcc/avr/5.4.0/include"/>
             <includePath path="/usr/lib/gcc/avr/5.4.0/include-fixed"/>
@@ -444,15 +438,9 @@
             <definedSymbol symbol="__INT24_MIN__=(-__INT24_MAX__-1)"/>
             <definedSymbol symbol="__UINT24_MAX__=16777215UL"/>
             <definedSymbol symbol="__ELF__=1"/>
-            <definedSymbol symbol="__AVR_ATmega328P__=1"/>
-            <definedSymbol symbol="__AVR_DEVICE_NAME__=atmega328p"/>
-            <definedSymbol symbol="F_CPU=16000000UL"/>
+            <definedSymbol symbol="__AVR_ATmega16__=1"/>
+            <definedSymbol symbol="__AVR_DEVICE_NAME__=atmega16"/>
+            <definedSymbol symbol="F_CPU=1000000UL"/>
         </collector>
-                            
-    
-    
     </instance>
-            
-
-
 </scannerInfo>
