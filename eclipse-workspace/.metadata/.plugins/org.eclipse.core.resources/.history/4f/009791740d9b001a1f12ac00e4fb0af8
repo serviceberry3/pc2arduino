@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <avr/io.h>
+#include <util/delay.h>
+
+#define PB5 5
+#define LED PB5 // LED is on Pin 13 or Pin 5 of Port B
+
+void initIO(void)
+{
+	DDRD = DDRD | 0b11111100;
+	PORTD = 0b11111100;
+
+	//OR the data direction register for port B with 2^5 (32)
+	DDRB |= (1<<LED); //setting pin 13 to output
+}
+
+
+int main(void)
+{
+	//call setup
+  initIO();
+
+  while (1)
+  {
+	PORTB |= (1<<LED); // set LED pin to ON (1)
+	//delay
+	_delay_ms(500);
+	PORTB &= ~(1<<LED); // clear; set LED pin to OFF (0)
+	//delay
+	_delay_ms(500);
+  }
+
+  return 0; // never reached
+}
+
+

@@ -1,0 +1,59 @@
+12:59:55 **** Incremental Build of configuration Release for project BlinkBlink ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:5:0: warning: "PB5" redefined
+ #define PB5 5
+ ^
+In file included from /usr/lib/avr/include/avr/io.h:627:0,
+                 from ../main.c:2:
+/usr/lib/avr/include/avr/portpins.h:149:0: note: this is the location of the previous definition
+ #  define PB5 PORTB5
+ ^
+Finished building: ../main.c
+ 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘main’:
+../uartxchange.c:66:3: warning: implicit declaration of function ‘pwm_init’ [-Wimplicit-function-declaration]
+   pwm_init();
+   ^
+Finished building: ../uartxchange.c
+ 
+Building target: BlinkBlink.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,BlinkBlink.map -mmcu=atmega328p -o "BlinkBlink.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o ./uartxchange.o   
+Finished building target: BlinkBlink.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S BlinkBlink.elf  >"BlinkBlink.lss"
+Finished building: BlinkBlink.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex BlinkBlink.elf  "BlinkBlink.hex"
+Finished building: BlinkBlink.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex BlinkBlink.elf  "BlinkBlink.eep"
+Finished building: BlinkBlink.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p BlinkBlink.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     294 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+12:59:55 Build Finished. 0 errors, 2 warnings. (took 884ms)
+
