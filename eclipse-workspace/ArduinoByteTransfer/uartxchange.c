@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <avr/io.h>
+#include "util/delay.h"
 
 
 #ifndef F_CPU
@@ -39,14 +40,15 @@ void uart_init(void)
 }
 
 //receive a byte from USB (which chip on Arduino converts to UART)
-
+#define LED2 PB4
 //see https://forum.arduino.cc/index.php?topic=483133.0 Section 7.5 for reference
 uint8_t uart_getc(void)
 {
 	//check to see if the RX Complete bit of the UCSR0A register is 1
     while (!(UCSR0A & (1<<RXC0)))   // wait/idle until symbol is ready
-        ;
+    	PORTB |= (1<<LED2);
 
+    PORTB &= ~(1<<LED2);
     //read data byte from RX register
     return UDR0;                    // return symbol
 }
@@ -79,6 +81,7 @@ void initIO(void)
 volatile uint8_t data = 10;
 #define LED PB5 // LED is on Pin 13 (fifth pin of Port B)
 
+
 int main(void)
 {
   initIO();
@@ -87,18 +90,22 @@ int main(void)
   while (1)
   {
 	//transmit test char 0x48 to Android
-	uart_putc('H');
+	//uart_putc('H');
 
 	//get the uart byte sent from PC
     uint8_t c = uart_getc();
 
-    //if byte is of even parity, turn off LED (set LED pin to 0)
-    if((c & 0x01) == 0)
+    //if byte is of even parity, turn off LED (set LED pin to 0) and put out a '0'
+    if((c & 0x01) == 0) {
     	PORTB &= ~(1<<LED);
+    	uart_putc('0');
+    }
 
-    //if byte is of odd parity, turn on LED (set LED pin to 1)
-    else
+    //if byte is of odd parity, turn on LED (set LED pin to 1) and put out a '1'
+    else {
     	PORTB |= (1<<LED);
+    	uart_putc('1');
+    }
   }
 
   return 0; // never reached
