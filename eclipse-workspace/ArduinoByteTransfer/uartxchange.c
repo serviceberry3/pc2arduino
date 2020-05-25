@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <avr/io.h>
+
 
 #ifndef F_CPU
 #warning "F_CPU was not defined, defining it now as 16000000"
@@ -23,6 +25,7 @@ Baud Rate (Bd) = clkSYS or F_CPU/(16(UBBRn + 1); where UBBRn = <UBRR0H, UBBR0L =
   #error Error in baud rate greater than 1%!
 #endif
 
+
 //UART-Initialization from www.mikrocontroller.net
 void uart_init(void)
 {
@@ -31,8 +34,8 @@ void uart_init(void)
 
     // asynchronous 8N1: 8 bits data, no parity bit, 1 stop bit
     UCSR0C = (0<<UMSEL01)|(0<<UMSEL00)|(1<<UCSZ01)|(1<<UCSZ00);
-    // enable UART RX
-    UCSR0B |= (1<<RXEN0);
+    // enable UART RX and TX
+    UCSR0B |= (1<<RXEN0) | (1<<TXEN0);
 }
 
 //receive a byte from USB (which chip on Arduino converts to UART)
@@ -48,6 +51,21 @@ uint8_t uart_getc(void)
     return UDR0;                    // return symbol
 }
 
+uint8_t uart_putc(unsigned char data) {
+	while (!(UCSR0A & (1 << UDRE0)))
+		;
+	UDR0 = data;
+	//UCSR0A = ((UCSR0A) & ((1 << U2X0) | (1 << MPCM0))) | (1 << TXC0);
+	return 0;
+}
+
+//test function, a little bit different
+uint8_t uart_putchar(char c) {
+	UDR0=c;
+	//wait for transmission to complete
+	loop_until_bit_is_set(UCSR0A, TXC0);
+}
+
 
 void initIO(void)
 {
@@ -58,18 +76,21 @@ void initIO(void)
     DDRB = 0xff;
 }
 
+volatile uint8_t data = 10;
 #define LED PB5 // LED is on Pin 13 (fifth pin of Port B)
 
 int main(void)
 {
   initIO();
   uart_init();
-  pwm_init();
+  PORTB |= (1<<LED);
   while (1)
   {
-	  //get the uart byte sent from PC
-    uint8_t c;
-    c = uart_getc();
+	//transmit test char 0x48 to Android
+	uart_putc('H');
+
+	//get the uart byte sent from PC
+    uint8_t c = uart_getc();
 
     //if byte is of even parity, turn off LED (set LED pin to 0)
     if((c & 0x01) == 0)
@@ -79,5 +100,11 @@ int main(void)
     else
     	PORTB |= (1<<LED);
   }
+
   return 0; // never reached
+}
+
+//interrupt handler
+ISR(USART_RX_vect) {
+	data = UDR0; //read data from UART data register and store it in global data var
 }

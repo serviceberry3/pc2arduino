@@ -3,8 +3,13 @@
   
 import usb
 import _thread
+import serial
+import os
+
 
 def setup():
+	
+	
 	busses = usb.busses()
 	handle = 0
 	print ("Setting up...")
@@ -15,7 +20,7 @@ def setup():
 			if dev.idVendor == 0x2341:
 				print("Found Arduino")
 				handle = dev.open()
-
+				
 				#set configuration to the first and only configuration for the Arduino
 				handle.setConfiguration(dev.configurations[0])
 
@@ -36,6 +41,13 @@ def sendCommand(handle):
 	#prompt user for one byte to send
 	while True:
 		msg = input("Enter byte in hex (0xnn): ")
+		if msg=="Read":
+			#ret = ard.read(ard.inWaiting())
+			#print ("Message from arduino: ")
+			#print (ret)
+			ret = handle.bulkRead(0x83, 1, 500)
+			print(chr(ret[0]))
+			return
 		try:
 			num = int(msg, 16)
 			print ("Sending "+ hex(num))

@@ -59,3 +59,1788 @@ Data:          0 bytes (0.0% Full)
 
 Finished building: sizedummy
  
+22:25:02 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     294 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:42:23 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘main’:
+../uartxchange.c:74:3: warning: implicit declaration of function ‘pwm_init’ [-Wimplicit-function-declaration]
+   pwm_init();
+   ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     310 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:44:18 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘main’:
+../uartxchange.c:75:3: warning: implicit declaration of function ‘pwm_init’ [-Wimplicit-function-declaration]
+   pwm_init();
+   ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     306 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:45:27 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘main’:
+../uartxchange.c:75:3: warning: implicit declaration of function ‘pwm_init’ [-Wimplicit-function-declaration]
+   pwm_init();
+   ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     302 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:34:25 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     302 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:34:29 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘main’:
+../uartxchange.c:76:3: warning: implicit declaration of function ‘pwm_init’ [-Wimplicit-function-declaration]
+   pwm_init();
+   ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     302 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:37:17 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘main’:
+../uartxchange.c:76:3: warning: implicit declaration of function ‘pwm_init’ [-Wimplicit-function-declaration]
+   pwm_init();
+   ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     302 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:32:27 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘main’:
+../uartxchange.c:76:3: warning: implicit declaration of function ‘pwm_init’ [-Wimplicit-function-declaration]
+   pwm_init();
+   ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     302 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:14:49 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     302 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:15:35 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘main’:
+../uartxchange.c:77:3: warning: implicit declaration of function ‘pwm_init’ [-Wimplicit-function-declaration]
+   pwm_init();
+   ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     294 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:17:15 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     298 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:23:07 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     312 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:25:57 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     314 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:28:00 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     308 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:31:00 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     322 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:32:00 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     314 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:32:43 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     314 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:36:34 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘main’:
+../uartxchange.c:81:3: warning: implicit declaration of function ‘flush’ [-Wimplicit-function-declaration]
+   flush();
+   ^
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+./uartxchange.o: In function `main':
+uartxchange.c:(.text.startup.main+0xe): undefined reference to `flush'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:53: ArduinoByteTransfer.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:39:35 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+./uartxchange.o: In function `main':
+uartxchange.c:(.text.startup.main+0xe): undefined reference to `flush'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:53: ArduinoByteTransfer.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:40:59 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c:2:21: fatal error: Arduino.h: No such file or directory
+compilation terminated.
+make: *** [subdir.mk:23: uartxchange.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:41:19 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     314 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:07:14 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     314 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:10:42 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+./uartxchange.o: In function `pwm_init':
+uartxchange.c:(.text.pwm_init+0x0): multiple definition of `pwm_init'
+./test.o:test.c:(.text.pwm_init+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [makefile:53: ArduinoByteTransfer.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:12:21 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     342 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:13:09 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     314 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:16:03 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     470 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:50:31 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c:4:65: fatal error: /snap/arduino/29/hardware/arduino/avr/cores/arduino/*: No such file or directory
+compilation terminated.
+make: *** [subdir.mk:23: uartxchange.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:51:53 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+In file included from /snap/arduino/29/hardware/arduino/avr/cores/arduino/Print.h:27:0,
+                 from /snap/arduino/29/hardware/arduino/avr/cores/arduino/Stream.h:26,
+                 from /snap/arduino/29/hardware/arduino/avr/cores/arduino/HardwareSerial.h:29,
+                 from ../uartxchange.c:4:
+/snap/arduino/29/hardware/arduino/avr/cores/arduino/Printable.h:25:1: error: unknown type name ‘class’
+ class Print;
+ ^
+/snap/arduino/29/hardware/arduino/avr/cores/arduino/Printable.h:33:1: error: unknown type name ‘class’
+ class Printable
+ ^
+/snap/arduino/29/hardware/arduino/avr/cores/arduino/Printable.h:34:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+In file included from /snap/arduino/29/hardware/arduino/avr/cores/arduino/Stream.h:26:0,
+                 from /snap/arduino/29/hardware/arduino/avr/cores/arduino/HardwareSerial.h:29,
+                 from ../uartxchange.c:4:
+/snap/arduino/29/hardware/arduino/avr/cores/arduino/Print.h:37:1: error: unknown type name ‘class’
+ class Print
+ ^
+/snap/arduino/29/hardware/arduino/avr/cores/arduino/Print.h:38:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+In file included from /snap/arduino/29/hardware/arduino/avr/cores/arduino/HardwareSerial.h:29:0,
+                 from ../uartxchange.c:4:
+/snap/arduino/29/hardware/arduino/avr/cores/arduino/Stream.h:49:1: error: unknown type name ‘class’
+ class Stream : public Print
+ ^
+/snap/arduino/29/hardware/arduino/avr/cores/arduino/Stream.h:49:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘:’ token
+ class Stream : public Print
+              ^
+In file included from ../uartxchange.c:4:0:
+/snap/arduino/29/hardware/arduino/avr/cores/arduino/HardwareSerial.h:93:1: error: unknown type name ‘class’
+ class HardwareSerial : public Stream
+ ^
+/snap/arduino/29/hardware/arduino/avr/cores/arduino/HardwareSerial.h:93:22: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘:’ token
+ class HardwareSerial : public Stream
+                      ^
+/snap/arduino/29/hardware/arduino/avr/cores/arduino/HardwareSerial.h:143:10: error: unknown type name ‘HardwareSerial’
+   extern HardwareSerial Serial;
+          ^
+In file included from /snap/arduino/29/hardware/arduino/avr/cores/arduino/HardwareSerial.cpp:30:0,
+                 from ../uartxchange.c:5:
+/snap/arduino/29/hardware/arduino/avr/cores/arduino/Arduino.h:258:26: fatal error: pins_arduino.h: No such file or directory
+compilation terminated.
+make: *** [subdir.mk:23: uartxchange.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:59:02 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../avr/cores/arduino/WInterrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"avr/cores/arduino/WInterrupts.d" -MT"avr/cores/arduino/WInterrupts.o" -c -o "avr/cores/arduino/WInterrupts.o" "../avr/cores/arduino/WInterrupts.c"
+In file included from ../avr/cores/arduino/wiring_private.h:31:0,
+                 from ../avr/cores/arduino/WInterrupts.c:33:
+../avr/cores/arduino/Arduino.h:258:26: fatal error: pins_arduino.h: No such file or directory
+compilation terminated.
+make: *** [avr/cores/arduino/subdir.mk:44: avr/cores/arduino/WInterrupts.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:01:43 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../avr/cores/arduino/WInterrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"avr/cores/arduino/WInterrupts.d" -MT"avr/cores/arduino/WInterrupts.o" -c -o "avr/cores/arduino/WInterrupts.o" "../avr/cores/arduino/WInterrupts.c"
+In file included from ../avr/cores/arduino/wiring_private.h:31:0,
+                 from ../avr/cores/arduino/WInterrupts.c:33:
+../avr/cores/arduino/Arduino.h:258:26: fatal error: pins_arduino.h: No such file or directory
+compilation terminated.
+make: *** [avr/cores/arduino/subdir.mk:44: avr/cores/arduino/WInterrupts.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:02:51 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../avr/cores/arduino/WInterrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"avr/cores/arduino/WInterrupts.d" -MT"avr/cores/arduino/WInterrupts.o" -c -o "avr/cores/arduino/WInterrupts.o" "../avr/cores/arduino/WInterrupts.c"
+Finished building: ../avr/cores/arduino/WInterrupts.c
+ 
+Building file: ../avr/cores/arduino/hooks.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"avr/cores/arduino/hooks.d" -MT"avr/cores/arduino/hooks.o" -c -o "avr/cores/arduino/hooks.o" "../avr/cores/arduino/hooks.c"
+Finished building: ../avr/cores/arduino/hooks.c
+ 
+Building file: ../avr/cores/arduino/wiring.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"avr/cores/arduino/wiring.d" -MT"avr/cores/arduino/wiring.o" -c -o "avr/cores/arduino/wiring.o" "../avr/cores/arduino/wiring.c"
+Finished building: ../avr/cores/arduino/wiring.c
+ 
+Building file: ../avr/cores/arduino/wiring_analog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"avr/cores/arduino/wiring_analog.d" -MT"avr/cores/arduino/wiring_analog.o" -c -o "avr/cores/arduino/wiring_analog.o" "../avr/cores/arduino/wiring_analog.c"
+Finished building: ../avr/cores/arduino/wiring_analog.c
+ 
+Building file: ../avr/cores/arduino/wiring_digital.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"avr/cores/arduino/wiring_digital.d" -MT"avr/cores/arduino/wiring_digital.o" -c -o "avr/cores/arduino/wiring_digital.o" "../avr/cores/arduino/wiring_digital.c"
+Finished building: ../avr/cores/arduino/wiring_digital.c
+ 
+Building file: ../avr/cores/arduino/wiring_pulse.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"avr/cores/arduino/wiring_pulse.d" -MT"avr/cores/arduino/wiring_pulse.o" -c -o "avr/cores/arduino/wiring_pulse.o" "../avr/cores/arduino/wiring_pulse.c"
+Finished building: ../avr/cores/arduino/wiring_pulse.c
+ 
+Building file: ../avr/cores/arduino/wiring_shift.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"avr/cores/arduino/wiring_shift.d" -MT"avr/cores/arduino/wiring_shift.o" -c -o "avr/cores/arduino/wiring_shift.o" "../avr/cores/arduino/wiring_shift.c"
+Finished building: ../avr/cores/arduino/wiring_shift.c
+ 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+In file included from /usr/lib/avr/include/avr/io.h:99:0,
+                 from ../uartxchange.c:3:
+../uartxchange.c: In function ‘uart_putc’:
+../uartxchange.c:58:21: error: ‘_ucsrb’ undeclared (first use in this function)
+  while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                     ^
+../uartxchange.c:58:21: note: each undeclared identifier is reported only once for each function it appears in
+../uartxchange.c:58:54: error: ‘_ucsra’ undeclared (first use in this function)
+  while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                                      ^
+../uartxchange.c:64:5: warning: implicit declaration of function ‘_tx_udr_empty_irq’ [-Wimplicit-function-declaration]
+     _tx_udr_empty_irq();
+     ^
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:72:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [subdir.mk:23: uartxchange.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:05:35 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../avr/libraries/Wire/src/utility/twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"avr/libraries/Wire/src/utility/twi.d" -MT"avr/libraries/Wire/src/utility/twi.o" -c -o "avr/libraries/Wire/src/utility/twi.o" "../avr/libraries/Wire/src/utility/twi.c"
+../avr/libraries/Wire/src/utility/twi.c:28:41: fatal error: Arduino.h: No such file or directory
+compilation terminated.
+make: *** [avr/libraries/Wire/src/utility/subdir.mk:20: avr/libraries/Wire/src/utility/twi.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:06:54 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../arduino/avr/libraries/Wire/src/utility/twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"arduino/avr/libraries/Wire/src/utility/twi.d" -MT"arduino/avr/libraries/Wire/src/utility/twi.o" -c -o "arduino/avr/libraries/Wire/src/utility/twi.o" "../arduino/avr/libraries/Wire/src/utility/twi.c"
+../arduino/avr/libraries/Wire/src/utility/twi.c:28:41: fatal error: Arduino.h: No such file or directory
+compilation terminated.
+make: *** [arduino/avr/libraries/Wire/src/utility/subdir.mk:20: arduino/avr/libraries/Wire/src/utility/twi.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:26:05 **** Clean-only build of configuration Release for project ArduinoByteTransfer ****
+make clean 
+rm -rf  ArduinoByteTransfer.hex  ./arduino/avr/libraries/Wire/src/utility/twi.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/UTILS/DEBUG/debug.o ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/UTILS/DEBUG/print_funcs.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/SERVICES/MEMORY/CTRL_ACCESS/ctrl_access.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/USART/usart.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/SPI/spi.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/pm.o ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/pm_conf_clocks.o ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/power_clocks_lib.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/INTC/intc.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/FLASHC/flashc.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/COMPONENTS/MEMORY/DATA_FLASH/AT45DBX/at45dbx.o ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/COMPONENTS/MEMORY/DATA_FLASH/AT45DBX/at45dbx_mem.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/BOARDS/EVK1105/led.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/BOARDS/ARDUINO/led.o  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/clocks.o ./arduino/avr/firmwares/wifishield/wifi_dnld/src/flash_fw.o ./arduino/avr/firmwares/wifishield/wifi_dnld/src/nor_flash.o ./arduino/avr/firmwares/wifishield/wifi_dnld/src/printf-stdarg.o ./arduino/avr/firmwares/wifishield/wifi_dnld/src/startup.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/UTILS/DEBUG/debug.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/UTILS/DEBUG/print_funcs.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/MEMORY/CTRL_ACCESS/ctrl_access.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-port-1.3.2/HD/if/netif/wlif.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/netif/etharp.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/netif/loopif.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/autoip.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/icmp.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/igmp.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/inet.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/inet_chksum.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/ip.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/ip_addr.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/ip_frag.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/dhcp.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/dns.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/init.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/mem.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/memp.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/netif.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/pbuf.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/raw.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/stats.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/tcp.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/tcp_in.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/tcp_out.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/udp.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/USART/usart.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/TC/tc.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/SPI/spi.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/RTC/rtc.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/pm.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/pm_conf_clocks.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/power_clocks_lib.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/PDCA/pdca.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/INTC/intc.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/FLASHC/flashc.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/EIC/eic.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/EBI/SMC/smc.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/COMPONENTS/MEMORY/DATA_FLASH/AT45DBX/at45dbx.o ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/COMPONENTS/MEMORY/DATA_FLASH/AT45DBX/at45dbx_mem.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/BOARDS/EVK1105/led.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/BOARDS/ARDUINO/led.o  ./arduino/avr/firmwares/wifishield/wifiHD/src/ard_spi.o ./arduino/avr/firmwares/wifishield/wifiHD/src/ard_tcp.o ./arduino/avr/firmwares/wifishield/wifiHD/src/ard_utils.o ./arduino/avr/firmwares/wifishield/wifiHD/src/avr32_spi.o ./arduino/avr/firmwares/wifishield/wifiHD/src/board_init.o ./arduino/avr/firmwares/wifishield/wifiHD/src/cmd_wl.o ./arduino/avr/firmwares/wifishield/wifiHD/src/console.o ./arduino/avr/firmwares/wifishield/wifiHD/src/fw_download_extflash.o ./arduino/avr/firmwares/wifishield/wifiHD/src/lwip_setup.o ./arduino/avr/firmwares/wifishield/wifiHD/src/main.o ./arduino/avr/firmwares/wifishield/wifiHD/src/nvram.o ./arduino/avr/firmwares/wifishield/wifiHD/src/owl_os.o ./arduino/avr/firmwares/wifishield/wifiHD/src/ping.o ./arduino/avr/firmwares/wifishield/wifiHD/src/printf-stdarg.o ./arduino/avr/firmwares/wifishield/wifiHD/src/timer.o ./arduino/avr/firmwares/wifishield/wifiHD/src/util.o ./arduino/avr/firmwares/wifishield/wifiHD/src/wl_cm.o  ./arduino/avr/firmwares/atmegaxxu2/arduino-usbserial/Arduino-usbserial.o ./arduino/avr/firmwares/atmegaxxu2/arduino-usbserial/Descriptors.o  ./arduino/avr/firmwares/atmegaxxu2/arduino-usbdfu/Arduino-usbdfu.o ./arduino/avr/firmwares/atmegaxxu2/arduino-usbdfu/Descriptors.o  ./arduino/avr/cores/arduino/WInterrupts.o ./arduino/avr/cores/arduino/hooks.o ./arduino/avr/cores/arduino/wiring.o ./arduino/avr/cores/arduino/wiring_analog.o ./arduino/avr/cores/arduino/wiring_digital.o ./arduino/avr/cores/arduino/wiring_pulse.o ./arduino/avr/cores/arduino/wiring_shift.o  ./arduino/avr/bootloaders/stk500v2/stk500boot.o  ./arduino/avr/bootloaders/optiboot/optiboot.o  ./arduino/avr/bootloaders/lilypad/src/ATmegaBOOT.o  ./arduino/avr/bootloaders/caterina-LilyPadUSB/Caterina.o ./arduino/avr/bootloaders/caterina-LilyPadUSB/Descriptors.o  ./arduino/avr/bootloaders/caterina-Arduino_Robot/Caterina.o ./arduino/avr/bootloaders/caterina-Arduino_Robot/Descriptors.o  ./arduino/avr/bootloaders/caterina/Caterina.o ./arduino/avr/bootloaders/caterina/Descriptors.o  ./arduino/avr/bootloaders/bt/ATmegaBOOT_168.o  ./arduino/avr/bootloaders/atmega8/ATmegaBOOT.o  ./arduino/avr/bootloaders/atmega/ATmegaBOOT_168.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o  ArduinoByteTransfer.eep  sizedummy  ./arduino/avr/cores/arduino/wiring_pulse.d  ArduinoByteTransfer.lss  ./arduino/avr/libraries/Wire/src/utility/twi.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/UTILS/DEBUG/debug.d ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/UTILS/DEBUG/print_funcs.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/SERVICES/MEMORY/CTRL_ACCESS/ctrl_access.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/USART/usart.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/SPI/spi.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/pm.d ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/pm_conf_clocks.d ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/power_clocks_lib.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/INTC/intc.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/DRIVERS/FLASHC/flashc.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/COMPONENTS/MEMORY/DATA_FLASH/AT45DBX/at45dbx.d ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/COMPONENTS/MEMORY/DATA_FLASH/AT45DBX/at45dbx_mem.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/BOARDS/EVK1105/led.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/SOFTWARE_FRAMEWORK/BOARDS/ARDUINO/led.d  ./arduino/avr/firmwares/wifishield/wifi_dnld/src/clocks.d ./arduino/avr/firmwares/wifishield/wifi_dnld/src/flash_fw.d ./arduino/avr/firmwares/wifishield/wifi_dnld/src/nor_flash.d ./arduino/avr/firmwares/wifishield/wifi_dnld/src/printf-stdarg.d ./arduino/avr/firmwares/wifishield/wifi_dnld/src/startup.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/UTILS/DEBUG/debug.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/UTILS/DEBUG/print_funcs.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/MEMORY/CTRL_ACCESS/ctrl_access.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-port-1.3.2/HD/if/netif/wlif.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/netif/etharp.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/netif/loopif.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/autoip.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/icmp.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/igmp.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/inet.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/inet_chksum.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/ip.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/ip_addr.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/ipv4/ip_frag.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/dhcp.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/dns.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/init.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/mem.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/memp.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/netif.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/pbuf.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/raw.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/stats.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/tcp.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/tcp_in.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/tcp_out.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/LWIP/lwip-1.3.2/src/core/udp.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/SERVICES/DELAY/delay.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/USART/usart.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/TC/tc.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/SPI/spi.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/RTC/rtc.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/pm.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/pm_conf_clocks.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/PM/power_clocks_lib.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/PDCA/pdca.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/INTC/intc.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/GPIO/gpio.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/FLASHC/flashc.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/EIC/eic.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/DRIVERS/EBI/SMC/smc.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/COMPONENTS/MEMORY/DATA_FLASH/AT45DBX/at45dbx.d ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/COMPONENTS/MEMORY/DATA_FLASH/AT45DBX/at45dbx_mem.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/BOARDS/EVK1105/led.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/SOFTWARE_FRAMEWORK/BOARDS/ARDUINO/led.d  ./arduino/avr/firmwares/wifishield/wifiHD/src/ard_spi.d ./arduino/avr/firmwares/wifishield/wifiHD/src/ard_tcp.d ./arduino/avr/firmwares/wifishield/wifiHD/src/ard_utils.d ./arduino/avr/firmwares/wifishield/wifiHD/src/avr32_spi.d ./arduino/avr/firmwares/wifishield/wifiHD/src/board_init.d ./arduino/avr/firmwares/wifishield/wifiHD/src/cmd_wl.d ./arduino/avr/firmwares/wifishield/wifiHD/src/console.d ./arduino/avr/firmwares/wifishield/wifiHD/src/fw_download_extflash.d ./arduino/avr/firmwares/wifishield/wifiHD/src/lwip_setup.d ./arduino/avr/firmwares/wifishield/wifiHD/src/main.d ./arduino/avr/firmwares/wifishield/wifiHD/src/nvram.d ./arduino/avr/firmwares/wifishield/wifiHD/src/owl_os.d ./arduino/avr/firmwares/wifishield/wifiHD/src/ping.d ./arduino/avr/firmwares/wifishield/wifiHD/src/printf-stdarg.d ./arduino/avr/firmwares/wifishield/wifiHD/src/timer.d ./arduino/avr/firmwares/wifishield/wifiHD/src/util.d ./arduino/avr/firmwares/wifishield/wifiHD/src/wl_cm.d  ./arduino/avr/firmwares/atmegaxxu2/arduino-usbserial/Arduino-usbserial.d ./arduino/avr/firmwares/atmegaxxu2/arduino-usbserial/Descriptors.d  ./arduino/avr/firmwares/atmegaxxu2/arduino-usbdfu/Arduino-usbdfu.d ./arduino/avr/firmwares/atmegaxxu2/arduino-usbdfu/Descriptors.d  ./arduino/avr/cores/arduino/WInterrupts.d ./arduino/avr/cores/arduino/hooks.d ./arduino/avr/cores/arduino/wiring.d ./arduino/avr/cores/arduino/wiring_analog.d ./arduino/avr/cores/arduino/wiring_digital.d ./arduino/avr/cores/arduino/wiring_pulse.d ./arduino/avr/cores/arduino/wiring_shift.d  ./arduino/avr/bootloaders/stk500v2/stk500boot.d  ./arduino/avr/bootloaders/optiboot/optiboot.d  ./arduino/avr/bootloaders/lilypad/src/ATmegaBOOT.d  ./arduino/avr/bootloaders/caterina-LilyPadUSB/Caterina.d ./arduino/avr/bootloaders/caterina-LilyPadUSB/Descriptors.d  ./arduino/avr/bootloaders/caterina-Arduino_Robot/Caterina.d ./arduino/avr/bootloaders/caterina-Arduino_Robot/Descriptors.d  ./arduino/avr/bootloaders/caterina/Caterina.d ./arduino/avr/bootloaders/caterina/Descriptors.d  ./arduino/avr/bootloaders/bt/ATmegaBOOT_168.d  ./arduino/avr/bootloaders/atmega8/ATmegaBOOT.d  ./arduino/avr/bootloaders/atmega/ATmegaBOOT_168.d  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.d  ./test.d ./uartxchange.d  ArduinoByteTransfer.elf
+ 
+16:26:06 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -c -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building file: ../test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"test.d" -MT"test.o" -c -o "test.o" "../test.c"
+../test.c:5:0: warning: "PB5" redefined
+ #define PB5 5
+ ^
+In file included from /usr/lib/avr/include/avr/io.h:627:0,
+                 from ../test.c:2:
+/usr/lib/avr/include/avr/portpins.h:149:0: note: this is the location of the previous definition
+ #  define PB5 PORTB5
+ ^
+Finished building: ../test.c
+ 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+In file included from /usr/lib/avr/include/avr/io.h:99:0,
+                 from ../uartxchange.c:3:
+../uartxchange.c: In function ‘uart_putc’:
+../uartxchange.c:58:21: error: ‘_ucsrb’ undeclared (first use in this function)
+  while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                     ^
+../uartxchange.c:58:21: note: each undeclared identifier is reported only once for each function it appears in
+../uartxchange.c:58:54: error: ‘_ucsra’ undeclared (first use in this function)
+  while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                                      ^
+../uartxchange.c:64:5: warning: implicit declaration of function ‘_tx_udr_empty_irq’ [-Wimplicit-function-declaration]
+     _tx_udr_empty_irq();
+     ^
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:72:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [subdir.mk:23: uartxchange.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:26:53 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+In file included from /usr/lib/avr/include/avr/io.h:99:0,
+                 from ../uartxchange.c:3:
+../uartxchange.c: In function ‘uart_putc’:
+../uartxchange.c:58:21: error: ‘_ucsrb’ undeclared (first use in this function)
+  while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                     ^
+../uartxchange.c:58:21: note: each undeclared identifier is reported only once for each function it appears in
+../uartxchange.c:58:54: error: ‘_ucsra’ undeclared (first use in this function)
+  while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                                      ^
+../uartxchange.c:64:5: warning: implicit declaration of function ‘_tx_udr_empty_irq’ [-Wimplicit-function-declaration]
+     _tx_udr_empty_irq();
+     ^
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:72:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [subdir.mk:23: uartxchange.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:27:52 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     482 bytes (1.5% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:40:08 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_init2’:
+../uartxchange.c:40:14: error: ‘UBRRH_VALUE’ undeclared (first use in this function)
+     UBRR0H = UBRRH_VALUE;
+              ^
+../uartxchange.c:40:14: note: each undeclared identifier is reported only once for each function it appears in
+../uartxchange.c:41:14: error: ‘UBRRL_VALUE’ undeclared (first use in this function)
+     UBRR0L = UBRRL_VALUE;
+              ^
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [subdir.mk:23: uartxchange.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:42:27 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+In file included from ../uartxchange.c:4:0:
+/usr/lib/avr/include/util/setbaud.h:117:4: error: #error "setbaud.h requires BAUD to be defined"
+ #  error "setbaud.h requires BAUD to be defined"
+    ^
+/usr/lib/avr/include/util/setbaud.h:125:4: error: #error "BAUD must be a constant value"
+ #  error "BAUD must be a constant value"
+    ^
+/usr/lib/avr/include/util/setbaud.h:201:11: error: division by zero in #if
+   (16 * ((UBRR_VALUE) + 1)) * (100 * (BAUD) + (BAUD) * (BAUD_TOL))
+           ^
+/usr/lib/avr/include/util/setbaud.h:221:10: error: division by zero in #if
+   (8 * ((UBRR_VALUE) + 1)) * (100 * (BAUD) + (BAUD) * (BAUD_TOL))
+          ^
+/usr/lib/avr/include/util/setbaud.h:222:4: warning: #warning "Baud rate achieved is higher than allowed" [-Wcpp]
+ #  warning "Baud rate achieved is higher than allowed"
+    ^
+/usr/lib/avr/include/util/setbaud.h:226:10: error: division by zero in #if
+   (8 * ((UBRR_VALUE) + 1)) * (100 * (BAUD) - (BAUD) * (BAUD_TOL))
+          ^
+/usr/lib/avr/include/util/setbaud.h:234:7: error: division by zero in #if
+ #  if UBRR_VALUE >= (1 << 12)
+       ^
+/usr/lib/avr/include/util/setbaud.h:235:6: warning: #warning "UBRR value overflow" [-Wcpp]
+ #    warning "UBRR value overflow"
+      ^
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [subdir.mk:23: uartxchange.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:43:22 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     360 bytes (1.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:43:43 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     360 bytes (1.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:45:42 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘main’:
+../uartxchange.c:85:3: warning: implicit declaration of function ‘uart_init2’ [-Wimplicit-function-declaration]
+   uart_init2();
+   ^
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+./uartxchange.o: In function `main':
+uartxchange.c:(.text.startup.main+0x4): undefined reference to `uart_init2'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:53: ArduinoByteTransfer.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:46:07 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     320 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:48:28 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     326 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:49:21 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     332 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:53:00 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     320 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:05:03 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:82:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     360 bytes (1.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:19 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c:109:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ ISR(USART_RX_vect) {
+ ^
+../uartxchange.c: In function ‘ISR’:
+../uartxchange.c:109:1: warning: type of ‘__vector_18’ defaults to ‘int’ [-Wimplicit-int]
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../uartxchange.c: In function ‘ISR’:
+../uartxchange.c:111:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     358 bytes (1.1% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:27:47 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c:108:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ ISR(USART_RX_vect) {
+ ^
+../uartxchange.c: In function ‘ISR’:
+../uartxchange.c:108:1: warning: type of ‘__vector_18’ defaults to ‘int’ [-Wimplicit-int]
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../uartxchange.c: In function ‘ISR’:
+../uartxchange.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     358 bytes (1.1% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:28:34 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c:110:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ ISR(USART_RX_vect) {
+ ^
+../uartxchange.c: In function ‘ISR’:
+../uartxchange.c:110:1: warning: type of ‘__vector_18’ defaults to ‘int’ [-Wimplicit-int]
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../uartxchange.c: In function ‘ISR’:
+../uartxchange.c:112:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     348 bytes (1.1% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:29:38 **** Incremental Build of configuration Release for project ArduinoByteTransfer ****
+make all 
+Building file: ../uartxchange.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"uartxchange.d" -MT"uartxchange.o" -c -o "uartxchange.o" "../uartxchange.c"
+../uartxchange.c:108:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ ISR(USART_RX_vect) {
+ ^
+../uartxchange.c: In function ‘ISR’:
+../uartxchange.c:108:1: warning: type of ‘__vector_18’ defaults to ‘int’ [-Wimplicit-int]
+../uartxchange.c: In function ‘uart_putchar’:
+../uartxchange.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../uartxchange.c: In function ‘ISR’:
+../uartxchange.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uartxchange.c
+ 
+Building target: ArduinoByteTransfer.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ArduinoByteTransfer.map -mmcu=atmega328p -o "ArduinoByteTransfer.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./test.o ./uartxchange.o   
+Finished building target: ArduinoByteTransfer.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ArduinoByteTransfer.elf  >"ArduinoByteTransfer.lss"
+Finished building: ArduinoByteTransfer.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.hex"
+Finished building: ArduinoByteTransfer.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ArduinoByteTransfer.elf  "ArduinoByteTransfer.eep"
+Finished building: ArduinoByteTransfer.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ArduinoByteTransfer.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     358 bytes (1.1% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
