@@ -45,7 +45,7 @@ def sendCommand(handle):
 			#ret = ard.read(ard.inWaiting())
 			#print ("Message from arduino: ")
 			#print (ret)
-			ret = handle.bulkRead(0x83, 1, 500)
+			ret = handle.bulkRead(0x83, 64, 500)
 			print(chr(ret[0]))
 			return
 		try:
